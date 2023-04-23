@@ -1,6 +1,6 @@
 # API to calculate random numbers in Express.js
 
-It's my first time building an API, I'm not sure if everything is working fine.  
+It's my first time building an API, so I'm not sure if everything is working fine.  
 
 ## How to run the API on your computer using localhost
 
