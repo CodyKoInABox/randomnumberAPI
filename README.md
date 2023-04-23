@@ -4,6 +4,7 @@ It's my first time building an API, so I'm not sure if everything is working fin
 
 ## How to run the API on your computer using localhost
 
+ - Make sure you have Node.js installed
  - Clone the repository to your machine
  - Open the terminal
  - Run the command `npm install`
