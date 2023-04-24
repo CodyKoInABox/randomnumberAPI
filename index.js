@@ -13,6 +13,9 @@ app.get('/number', (req, res) => {
     if(max === undefined){
         max = 1
     }
+    if(type === undefined){
+        type = 'float'
+    }
 
 
     function calculateRandomValue(){
@@ -24,7 +27,7 @@ app.get('/number', (req, res) => {
         }
     }
 
-    if(type == 'int' || type == 'integer' || type == 'float' || type === undefined){
+    if(type == 'int' || type == 'integer' || type == 'float'){
         if(!isNaN(min) && !isNaN(max)){
             res.status(200).send({
                 'value': calculateRandomValue(),
