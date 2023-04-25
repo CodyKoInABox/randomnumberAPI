@@ -17,16 +17,6 @@ app.get('/number', (req, res) => {
         type = 'float'
     }
 
-
-    // function calculateRandomValue(){
-    //     if(type != 'int' && type != 'integer'){
-    //         return Math.random()*(max-min)+min.toString()
-    //     }
-    //     else{
-    //         return Math.floor(Math.random()*(Math.floor(max)-Math.ceil(min))+Math.ceil(min)).toString()
-    //     }
-    // }
-
     function calculateRandomValue(){
         if(type == 'float'){
             console.log(min)
@@ -60,7 +50,6 @@ app.get('/number', (req, res) => {
         })
     }
 })
-
 
 app.listen(PORT, () => {
     console.log(`Live on port ${PORT}`)
