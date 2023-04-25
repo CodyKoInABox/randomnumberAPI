@@ -50,4 +50,8 @@ app.get('/number', (req, res) => {
 })
 
 
-app.listen(PORT)
+app.listen(PORT, () => {
+    console.log(`Live on port ${PORT}`)
+})
+
+module.exports = app;
