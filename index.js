@@ -3,8 +3,8 @@ const PORT = 8080
 
 app.get('/number', (req, res) => {
 
-    let min = req.query.min
-    let max = req.query.max
+    let min = parseInt(req.query.min)
+    let max = parseInt(req.query.max)
     let type = req.query.type
 
     if(min === undefined){
@@ -29,6 +29,9 @@ app.get('/number', (req, res) => {
 
     function calculateRandomValue(){
         if(type == 'float'){
+            console.log(min)
+            console.log(max)
+            console.log(max-min)
             return ((Math.random() * (max - min)) + min)
         }
         else{
@@ -40,14 +43,14 @@ app.get('/number', (req, res) => {
         if(!isNaN(min) && !isNaN(max)){
             res.status(200).send({
                 'value': calculateRandomValue(),
-                'minimumPossibleValue': min,
-                'maximunPossibleValue': max,
+                'minimum': min,
+                'maximum': max,
                 'type': type
             })
         }
         else{
             res.status(422).send({
-                'ERROR 422': 'Invalid min or max, please check the documentation.'
+                'ERROR 422': 'Invalid min or max values, please check the documentation.'
             })
         }
     }
