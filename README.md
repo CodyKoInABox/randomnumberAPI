@@ -25,6 +25,7 @@ It's my first time building an API, so I'm not sure if everything is working fin
  ### Range:
  
  - To define a range, use the params `min` and `max` on the GET request
+ - `min` is INCLUSIVE while `max` is EXCLUSIVE, so the random number will be:  **`min <= RandomNumber < max`**
  - Example: http://localhost:8080/number?min=10&max=20 will return a random number between 10 and 20
  - If the min and max are not defined, these values will be assumed: `min=0&max=1`
  - **Available params:**
