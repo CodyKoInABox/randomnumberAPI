@@ -5,7 +5,7 @@ app.get('/number', (req, res) => {
 
     let min = req.query.min
     let max = req.query.max
-    const type = req.query.type
+    let type = req.query.type
 
     if(min === undefined){
         min = 0
