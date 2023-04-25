@@ -1,6 +1,13 @@
 # API to calculate random numbers in Express.js
 
-It's my first time building an API, so I'm not sure if everything is working fine.  
+It's my first time building an API, so I'm not sure if everything is working fine.
+
+## How to use the API
+
+- The API link is: https://randomnumber-one.vercel.app/number
+- To use the API with the link above, refer to the documentation below and change "localhost:8080" for the Vercel link above!
+- It's hosted on Vercel.
+- You can also run it locally on your computer, for that, refer to the topics below.
 
 ## How to run the API on your computer using localhost
 
