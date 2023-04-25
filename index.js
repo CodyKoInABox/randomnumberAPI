@@ -29,7 +29,7 @@ app.get('/number', (req, res) => {
 
     function calculateRandomValue(){
         if(type == 'float'){
-            return Math.random()*(max-min)+min.toString()
+            return ((Math.random() * (max - min)) + min)
         }
         else{
             return Math.floor(Math.random()*(Math.floor(max)-Math.ceil(min))+Math.ceil(min)).toString()
