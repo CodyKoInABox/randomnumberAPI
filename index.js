@@ -3,15 +3,21 @@ const PORT = 8080
 
 app.get('/number', (req, res) => {
 
-    let min = parseInt(req.query.min)
-    let max = parseInt(req.query.max)
+    let min = req.query.min
+    let max = req.query.max
     let type = req.query.type
 
     if(min === undefined){
         min = 0
     }
+    else{
+        min = parseInt(min)
+    }
     if(max === undefined){
         max = 1
+    }
+    else{
+        max = parseInt(max)
     }
     if(type === undefined){
         type = 'float'
